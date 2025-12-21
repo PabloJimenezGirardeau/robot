@@ -91,9 +91,9 @@ class MainInterface:
             
             # Tabs con estilo mejorado
             with ui.tabs().classes('w-full shadow-lg') as tabs:
-                ui.tab('🎮 Modo Manual', name='manual').classes('text-lg font-semibold')
-                ui.tab('📖 Cocina Guiada', name='guiada').classes('text-lg font-semibold')
-                ui.tab('📚 Mis Recetas', name='recetas').classes('text-lg font-semibold')
+                ui.tab('manual', label='🎮 Modo Manual').classes('text-lg font-semibold')
+                ui.tab('guiada', label='📖 Cocina Guiada').classes('text-lg font-semibold')
+                ui.tab('recetas', label='📚 Mis Recetas').classes('text-lg font-semibold')
             
             with ui.tab_panels(tabs, value='manual').classes('w-full'):
                 with ui.tab_panel('manual').classes('fade-in'):
